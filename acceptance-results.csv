@@ -1,0 +1,9 @@
+Test,Start,Minutes,Status,Expected,Code-based observation,Appsmith observation,Result
+T1,10:30,60,Open,Available,Available Room 101 is available.,Available — Room 101 is free for this interval.,Pass
+T2,09:30,30,Open,Unavailable: overlap,Unavailable This interval overlaps an existing booking: 09:00–10:00 (CS Dept).,Unavailable — overlaps the 09:00–10:00 booking.,Pass
+T3,10:30,60,Blocked,Unavailable: blocked,Unavailable Room 101 is currently blocked and unavailable.,Unavailable — Room 101 is blocked.,Pass
+T4,10:30,0,Open,Validation error: duration,Validation error Duration must be 1 to 120 minutes.,Validation error — duration must be 1 to 120 minutes.,Pass
+T5,10:30,121,Open,Validation error: duration,Validation error Duration must be 1 to 120 minutes.,Validation error — duration must be 1 to 120 minutes.,Pass
+T6,08:00,30,Open,Validation error: past start,Validation error Start must be after 08:30.,Validation error — start time must be after 08:30.,Pass
+T7,10:00,60,Open,Available: adjacent,Available Room 101 is available.,Available — Room 101 is free for this interval.,Pass
+T8,,,,Bookings unchanged,09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept,09:00–10:00   ·   CS Dept / 12:00–13:00   ·   Math Dept,Pass

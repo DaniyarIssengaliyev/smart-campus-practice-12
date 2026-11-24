@@ -1,0 +1,64 @@
+{
+  "before": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept",
+  "cases": [
+    {
+      "id": 1,
+      "time": "10:30",
+      "duration": 60,
+      "blocked": false,
+      "msg": "Available Room 101 is available.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 2,
+      "time": "09:30",
+      "duration": 30,
+      "blocked": false,
+      "msg": "Unavailable This interval overlaps an existing booking: 09:00–10:00 (CS Dept).",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 3,
+      "time": "10:30",
+      "duration": 60,
+      "blocked": true,
+      "msg": "Unavailable Room 101 is currently blocked and unavailable.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 4,
+      "time": "10:30",
+      "duration": 0,
+      "blocked": false,
+      "msg": "Validation error Duration must be 1 to 120 minutes.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 5,
+      "time": "10:30",
+      "duration": 121,
+      "blocked": false,
+      "msg": "Validation error Duration must be 1 to 120 minutes.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 6,
+      "time": "08:00",
+      "duration": 30,
+      "blocked": false,
+      "msg": "Validation error Start must be after 08:30.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    },
+    {
+      "id": 7,
+      "time": "10:00",
+      "duration": 60,
+      "blocked": false,
+      "msg": "Available Room 101 is available.",
+      "bookings": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept"
+    }
+  ],
+  "after": "09:00 – 10:00 CS Dept 12:00 – 13:00 Math Dept",
+  "seconds": 15,
+  "url": "https://daniyarissengaliyev.github.io/smart-campus-practice-12/"
+}

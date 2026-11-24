@@ -1,0 +1,69 @@
+{
+  "before": [
+    "09:00–10:00   ·   CS Dept",
+    "12:00–13:00   ·   Math Dept"
+  ],
+  "cases": [
+    {
+      "i": 1,
+      "msg": "Available — Room 101 is free for this interval.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 2,
+      "msg": "Unavailable — overlaps the 09:00–10:00 booking.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 3,
+      "msg": "Unavailable — Room 101 is blocked.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 4,
+      "msg": "Validation error — duration must be 1 to 120 minutes.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 5,
+      "msg": "Validation error — duration must be 1 to 120 minutes.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 6,
+      "msg": "Validation error — start time must be after 08:30.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    },
+    {
+      "i": 7,
+      "msg": "Available — Room 101 is free for this interval.",
+      "bookings": [
+        "09:00–10:00   ·   CS Dept",
+        "12:00–13:00   ·   Math Dept"
+      ]
+    }
+  ],
+  "after": [
+    "09:00–10:00   ·   CS Dept",
+    "12:00–13:00   ·   Math Dept"
+  ],
+  "seconds": 32
+}
